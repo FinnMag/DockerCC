@@ -90,29 +90,6 @@ function AddItemForm({ onNewItem }) {
     };
 
     return (
-        <Form onSubmit={submitNewItem}>
-            <InputGroup className="mb-3">
-                <Form.Control
-                    value={newItem}
-                    onChange={e => setNewItem(e.target.value)}
-                    type="text"
-                    placeholder="Add Food for Ben"
-                    aria-describedby="basic-addon1"
-		    disabled
-                />
-                <InputGroup.Append>
-                    <Button
-                        type="submit"
-                        variant="success"
-                        disabled={!newItem.length}
-                        className={submitting ? 'disabled' : ''}
-                        disabled
-			>
-                        {submitting ? 'Adding...' : 'Add Item'}
-			</Button>
-                </InputGroup.Append>
-            </InputGroup>
-        </Form>
     );
 }
 

@@ -69,7 +69,7 @@ function TodoListCard() {
 
 function AddItemForm({ onNewItem }) {
     const { Form, InputGroup, Button } = ReactBootstrap;
-
+    const 
     const [newItem, setNewItem] = React.useState('');
     const [submitting, setSubmitting] = React.useState(false);
 
@@ -98,7 +98,6 @@ function AddItemForm({ onNewItem }) {
                     type="text"
                     placeholder="Add Food for Ben"
                     aria-describedby="basic-addon1"
-		    disabled
                 />
                 <InputGroup.Append>
                     <Button
@@ -106,10 +105,9 @@ function AddItemForm({ onNewItem }) {
                         variant="success"
                         disabled={!newItem.length}
                         className={submitting ? 'disabled' : ''}
-                        disabled
-			>
+                    >
                         {submitting ? 'Adding...' : 'Add Item'}
-			</Button>
+                    </Button>
                 </InputGroup.Append>
             </InputGroup>
         </Form>
