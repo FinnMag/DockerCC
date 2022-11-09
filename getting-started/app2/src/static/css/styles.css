@@ -1,0 +1,59 @@
+body {
+    background-image: url('4651578.jpg');
+    background-attachment:fixed;
+    background-postion: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #4846d8;	
+    margin-top: 50px;
+    font-family: 'Lato';
+}
+
+.item {
+    background-color:#4846d8;
+    padding: 30px;
+    margin-bottom: 20px;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 1em #ccc;
+    transition: all .2s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: 0 0 1em #aaa;
+}
+
+.item.completed {
+    text-decoration: line-through;
+}
+
+.toggles {
+    color: black;
+}
+
+.name {
+    padding-top: 3px;
+}
+
+.remove {
+    padding-left: 0;
+}
+
+button:focus {
+    border: 1px solid #333;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.centertext {
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	color: black;
+		
+}
